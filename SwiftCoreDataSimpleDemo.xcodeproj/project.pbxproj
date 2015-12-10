@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8B7DF61C1970D6004776EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B7DF51C1970D6004776EB /* NetworkManager.swift */; settings = {ASSET_TAGS = (); }; };
 		0E8B7DFA1C1979AB004776EB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B7DF91C1979AB004776EB /* FirstViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0E8B7DFC1C1983B3004776EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B7DFB1C1983B3004776EB /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E8B7E3B1C199267004776EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B7E3A1C199267004776EB /* NetworkManager.swift */; settings = {ASSET_TAGS = (); }; };
 		0ED5EBB91C184E020036392C /* GlobalSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBB81C184E020036392C /* GlobalSingleton.swift */; settings = {ASSET_TAGS = (); }; };
 		0ED5EBBA1C184E020036392C /* GlobalSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBB81C184E020036392C /* GlobalSingleton.swift */; settings = {ASSET_TAGS = (); }; };
 		0ED5EBBC1C184E100036392C /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBBB1C184E100036392C /* GlobalSettings.swift */; settings = {ASSET_TAGS = (); }; };
@@ -20,8 +20,6 @@
 		0ED5EBC31C184E210036392C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBC11C184E210036392C /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 		0ED5EBCA1C1852100036392C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBC81C1852100036392C /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
 		0ED5EBCB1C1852100036392C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBC81C1852100036392C /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
-		0ED5EBCF1C18526E0036392C /* NetworkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBCE1C18526E0036392C /* NetworkDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		0ED5EBD01C18526E0036392C /* NetworkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5EBCE1C18526E0036392C /* NetworkDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		2C43C7CF06E371B9D54250A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C43C50261AE791B572ADAF3 /* README.md */; };
 		7D9C6BDF5375CF00E3C79FB6 /* Pods_SwiftCoreDataSimpleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DAE3FAE4D0DCE98E8775C9 /* Pods_SwiftCoreDataSimpleDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		87794B371942DE1E0034663A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87794B361942DE1E0034663A /* AppDelegate.swift */; };
@@ -73,16 +71,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E8B7DF51C1970D6004776EB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0E8B7DF91C1979AB004776EB /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		0E8B7DFB1C1983B3004776EB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0E8B7E3A1C199267004776EB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0ED5EBB81C184E020036392C /* GlobalSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSingleton.swift; sourceTree = "<group>"; };
 		0ED5EBBB1C184E100036392C /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		0ED5EBBE1C184E1A0036392C /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		0ED5EBC11C184E210036392C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0ED5EBC41C184FDE0036392C /* Objective-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Bridging-Header.h"; sourceTree = "<group>"; };
 		0ED5EBC81C1852100036392C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		0ED5EBCE1C18526E0036392C /* NetworkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDelegate.swift; sourceTree = "<group>"; };
 		2C43C50261AE791B572ADAF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.MD; path = README.md; sourceTree = "<group>"; };
 		56DAE3FAE4D0DCE98E8775C9 /* Pods_SwiftCoreDataSimpleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCoreDataSimpleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AAEE4255C8A69CB6425206 /* Pods-SwiftCoreDataSimpleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoreDataSimpleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoreDataSimpleDemo/Pods-SwiftCoreDataSimpleDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,9 +143,8 @@
 		0ED5EBC61C1851DB0036392C /* ServiceHandler */ = {
 			isa = PBXGroup;
 			children = (
-				0ED5EBCE1C18526E0036392C /* NetworkDelegate.swift */,
+				0E8B7E3A1C199267004776EB /* NetworkManager.swift */,
 				0ED5EBC81C1852100036392C /* Reachability.swift */,
-				0E8B7DF51C1970D6004776EB /* NetworkManager.swift */,
 			);
 			name = ServiceHandler;
 			sourceTree = "<group>";
@@ -462,13 +458,12 @@
 			files = (
 				87794B371942DE1E0034663A /* AppDelegate.swift in Sources */,
 				0ED5EBBC1C184E100036392C /* GlobalSettings.swift in Sources */,
-				0E8B7DF61C1970D6004776EB /* NetworkManager.swift in Sources */,
+				0E8B7E3B1C199267004776EB /* NetworkManager.swift in Sources */,
 				0E8B7DFC1C1983B3004776EB /* BaseViewController.swift in Sources */,
 				0ED5EBC21C184E210036392C /* Constants.swift in Sources */,
 				0ED5EBB91C184E020036392C /* GlobalSingleton.swift in Sources */,
 				0ED5EBCA1C1852100036392C /* Reachability.swift in Sources */,
 				87794B3A1942DE1E0034663A /* SwiftCoreDataSimpleDemo.xcdatamodeld in Sources */,
-				0ED5EBCF1C18526E0036392C /* NetworkDelegate.swift in Sources */,
 				0E8B7DFA1C1979AB004776EB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +476,6 @@
 				87794B481942DE1E0034663A /* SwiftCoreDataSimpleDemoTests.swift in Sources */,
 				0ED5EBBD1C184E100036392C /* GlobalSettings.swift in Sources */,
 				0ED5EBCB1C1852100036392C /* Reachability.swift in Sources */,
-				0ED5EBD01C18526E0036392C /* NetworkDelegate.swift in Sources */,
 				0ED5EBC31C184E210036392C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

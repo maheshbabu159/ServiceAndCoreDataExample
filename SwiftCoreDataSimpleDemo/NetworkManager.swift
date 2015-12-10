@@ -7,6 +7,12 @@
 //
 
 import UIKit
+//@objc
+protocol CMNetworkDelegate{
+    
+    func dataDelegate(dataVal:AnyObject, sourceType:GlobalVariables.RequestAPIMethods)
+    func networkError(errorStr:String)
+}
 
 class NetworkManager: NSObject {
 
