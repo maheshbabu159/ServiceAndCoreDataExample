@@ -10,16 +10,19 @@ import UIKit
 //@objc
 protocol CMNetworkDelegate{
     
-    func dataDelegate(dataVal:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods)
-    func networkError(errorStr:String)
+    func dataDelegate(reponseData:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods)
+    func networkError(errorMessage:String)
 }
 
 class NetworkManager: NSObject {
 
     
-    class func postRequest(parameters:[String:AnyObject], requestMethod:GlobalVariables.RequestAPIMethods, delegate:CMNetworkDelegate) {
+    class func postRequest(parameters:[String:AnyObject], delegate:CMNetworkDelegate) {
         
-        
+        //Create enum from method name
+        let requestMethod = GlobalVariables.RequestAPIMethods(rawValue: parameters["method"] as! String)
+
+        //Url object creation
         let url = NSURL(string: GlobalVariables.request_url)
         let request = NSMutableURLRequest(URL:url!)
         
@@ -28,9 +31,11 @@ class NetworkManager: NSObject {
         request.setValue(GlobalVariables.x_parse_application_id_value, forHTTPHeaderField: GlobalVariables.x_parse_application_id_key)
         request.setValue(GlobalVariables.x_parse_rest_api_value, forHTTPHeaderField: GlobalVariables.x_parse_rest_api_key)
         
+        //Conver params to json data
         request.HTTPMethod = "POST"
         request.HTTPBody = NetworkManager.encodeParameters(parameters)
         
+        //Start requesting
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
             data, response, error in
             
@@ -53,12 +58,13 @@ class NetworkManager: NSObject {
                 
                 
                 do{
+                    
                     let jsonResult: AnyObject = (try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers))
                     dispatch_async(dispatch_get_main_queue(), {
                         
-                        //TODO:Change parameter to request method enum
-                        delegate.dataDelegate(jsonResult, requestMethod:requestMethod)
+                        delegate.dataDelegate(jsonResult, requestMethod:requestMethod!)
                     })
+                    
                 }catch{
                     
                     dispatch_async(dispatch_get_main_queue(), {

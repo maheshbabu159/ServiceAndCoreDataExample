@@ -56,11 +56,7 @@ struct GlobalVariables {
     static let user_defaults_role_id_key = "roleId"
     static let user_defaults_name_key = "name"
     static let user_defaults_isPurchased_key = "isPurchased"
-    
-    
-    
-    
-    
+     
     //Service calls values
     static let request_url = "https://api.parse.com/1/functions/function"
     static let moreAppsURL = "https://itunes.apple.com/us/artist/mahendra-babu/id470889593"
@@ -89,7 +85,12 @@ struct GlobalVariables {
         case registerDevice = "registerDevice"
         
     }
-    
+    enum CoreDataEntities : NSString{
+        
+        case Movies = "Movies"
+        case ReviewOrComment = "ReviewOrComment"
+        
+    }
     enum BookmarkType : NSString{
         
         case Institute = "Institute"

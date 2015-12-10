@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FirstViewController: BaseViewController {
 
@@ -15,8 +16,10 @@ class FirstViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         let parameters = ["method":GlobalVariables.RequestAPIMethods.getComments.rawValue,"movieId":"lQl9OfB40U"]
+        var appDelegate = UIApplication.sharedApplication().delegate
         
-        NetworkManager.postRequest(parameters, requestMethod: GlobalVariables.RequestAPIMethods.getComments, delegate: self)
+        var context: NSManagedObjectContext = appDelegate.managedObjectContext!
+        NetworkManager.postRequest(parameters, delegate: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,12 +39,23 @@ class FirstViewController: BaseViewController {
     */
     
     //MARK:Service data handler
-    override func dataDelegate(dataValue: AnyObject, requestMethod:GlobalVariables.RequestAPIMethods) {
-        super.dataDelegate(dataValue, requestMethod: requestMethod)
+    override func dataDelegate(reponseData: AnyObject, requestMethod:GlobalVariables.RequestAPIMethods) {
+        super.dataDelegate(reponseData, requestMethod: requestMethod)
         
-        
-        
+        switch requestMethod{
+            
+        case .getComments:
+            
+            if let rootDictionary = reponseData as? [String:AnyObject]{
+            
+                print(rootDictionary)
+            }
+
+            break
     
+        default:
+            print("")
+        }
     }
 
 }

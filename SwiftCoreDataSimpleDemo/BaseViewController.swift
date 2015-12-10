@@ -21,16 +21,6 @@ class BaseViewController: UIViewController, CMNetworkDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     func showAlertView(alertTitle: String, alertMsg: String){
         
         let alertController = UIAlertController(title: alertTitle, message: alertMsg, preferredStyle: .Alert)
@@ -40,14 +30,24 @@ class BaseViewController: UIViewController, CMNetworkDelegate {
         
         presentViewController(alertController, animated: true, completion: nil)
     }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+ 
     
     //MARK:Service delegate methods
-    func dataDelegate(dataValue:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods){
-        print("\(requestMethod) = \(dataValue)")
+    func dataDelegate(reponseData:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods){
+        print("\(requestMethod) = \(reponseData)")
     }
-    func networkError(errorStr:String){
+    func networkError(errorMessage:String){
         
-        self.showAlertView(GlobalVariables.appName, alertMsg: errorStr)
+        self.showAlertView(GlobalVariables.appName, alertMsg: errorMessage)
     }
 
 
