@@ -52,12 +52,10 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'Pods-SwiftCoreDataSimpleDemo/AFNetworking.framework'
   install_framework 'Pods-SwiftCoreDataSimpleDemo/MBProgressHUD.framework'
   install_framework 'Pods-SwiftCoreDataSimpleDemo/UIColor_Hex_Swift.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'Pods-SwiftCoreDataSimpleDemo/AFNetworking.framework'
   install_framework 'Pods-SwiftCoreDataSimpleDemo/MBProgressHUD.framework'
   install_framework 'Pods-SwiftCoreDataSimpleDemo/UIColor_Hex_Swift.framework'
 fi

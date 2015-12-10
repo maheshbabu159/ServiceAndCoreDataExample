@@ -42,8 +42,8 @@ class BaseViewController: UIViewController, CMNetworkDelegate {
     }
     
     //MARK:Service delegate methods
-    func dataDelegate(dataValue:AnyObject, sourceType:GlobalVariables.RequestAPIMethods){
-        print("data dict:\(dataValue)")
+    func dataDelegate(dataValue:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods){
+        print("\(requestMethod) = \(dataValue)")
     }
     func networkError(errorStr:String){
         

@@ -85,7 +85,7 @@ struct GlobalVariables {
     
     enum RequestAPIMethods : NSString{
         
-        case getStudets = "getStudets"
+        case getComments = "getComments"
         case registerDevice = "registerDevice"
         
     }

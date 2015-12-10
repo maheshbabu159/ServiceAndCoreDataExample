@@ -14,9 +14,9 @@ class FirstViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let parameters = ["metdhod": "getComments","movieId":"lQl9OfB40U"]
+        let parameters = ["method":GlobalVariables.RequestAPIMethods.getComments.rawValue,"movieId":"lQl9OfB40U"]
         
-        NetworkManager.postRequest(parameters, requestMethod: GlobalVariables.RequestAPIMethods.getStudets, delegate: self)
+        NetworkManager.postRequest(parameters, requestMethod: GlobalVariables.RequestAPIMethods.getComments, delegate: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +34,14 @@ class FirstViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK:Service data handler
+    override func dataDelegate(dataValue: AnyObject, requestMethod:GlobalVariables.RequestAPIMethods) {
+        super.dataDelegate(dataValue, requestMethod: requestMethod)
+        
+        
+        
+    
+    }
 
 }

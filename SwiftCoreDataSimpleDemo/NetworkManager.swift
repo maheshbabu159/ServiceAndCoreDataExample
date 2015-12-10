@@ -10,7 +10,7 @@ import UIKit
 //@objc
 protocol CMNetworkDelegate{
     
-    func dataDelegate(dataVal:AnyObject, sourceType:GlobalVariables.RequestAPIMethods)
+    func dataDelegate(dataVal:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods)
     func networkError(errorStr:String)
 }
 
@@ -57,7 +57,7 @@ class NetworkManager: NSObject {
                     dispatch_async(dispatch_get_main_queue(), {
                         
                         //TODO:Change parameter to request method enum
-                        delegate.dataDelegate(jsonResult, sourceType:requestMethod)
+                        delegate.dataDelegate(jsonResult, requestMethod:requestMethod)
                     })
                 }catch{
                     

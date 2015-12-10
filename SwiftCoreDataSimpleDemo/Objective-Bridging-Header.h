@@ -9,7 +9,6 @@
 #ifndef GameFramework_GameFramework_Bridging_Header_h
 #define GameFramework_GameFramework_Bridging_Header_h
 
-#import <AFNetworking/AFNetworking.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 
 #endif
