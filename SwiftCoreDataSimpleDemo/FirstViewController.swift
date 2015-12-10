@@ -11,14 +11,17 @@ import CoreData
 
 class FirstViewController: BaseViewController {
 
+    let  appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let parameters = ["method":GlobalVariables.RequestAPIMethods.getComments.rawValue,"movieId":"lQl9OfB40U"]
-        var appDelegate = UIApplication.sharedApplication().delegate
         
-        var context: NSManagedObjectContext = appDelegate.managedObjectContext!
+        Movies.addObject(appDelegate.managedObjectContext)
+        
+        
         NetworkManager.postRequest(parameters, delegate: self)
     }
 

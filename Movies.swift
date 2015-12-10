@@ -12,7 +12,7 @@ import CoreData
 class Movies: NSManagedObject {
 
     // Insert code here to add functionality to your managed object subclass
-    class func addObject() {
+    class func addObject(context:NSManagedObjectContext) {
         
        
     }
