@@ -15,6 +15,7 @@ class Movies: NSManagedObject {
     class func addObject(context:NSManagedObjectContext) {
         
        
+        
     }
     class func deleteObject() {
         
@@ -27,5 +28,11 @@ class Movies: NSManagedObject {
     class func truncateAllObject() {
         
         
+    }
+    class func fetchAllObjects(context:NSManagedObjectContext) -> NSArray {
+        
+        let resultArray = CommonOperations.fetchAllObjects(GlobalVariables.CoreDataEntities.Movies.rawValue as String, context: context)
+        
+        return resultArray
     }
 }
