@@ -222,7 +222,6 @@
 		0EFFEF8F1C19B302004EA2AE /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */,
 				0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */,
 				0EFFEF991C19B326004EA2AE /* Movies.swift */,
 				0EFFEF9A1C19B326004EA2AE /* ReviewOrComment.swift */,
@@ -233,6 +232,7 @@
 		0EFFEF901C19B30B004EA2AE /* Properties */ = {
 			isa = PBXGroup;
 			children = (
+				0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */,
 				0EFFEF911C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift */,
 				0EFFEF921C19B318004EA2AE /* Movies+CoreDataProperties.swift */,
 			);

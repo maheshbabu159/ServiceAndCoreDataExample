@@ -18,7 +18,7 @@ class NetworkManager: NSObject {
 
     
     class func postRequest(parameters:[String:AnyObject], delegate:CMNetworkDelegate) {
-        
+                
         //Create enum from method name
         let requestMethod = GlobalVariables.RequestAPIMethods(rawValue: parameters["method"] as! String)
 

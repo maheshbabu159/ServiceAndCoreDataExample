@@ -16,7 +16,7 @@ extension ReviewOrComment {
 
     @NSManaged var objectId: String?
     @NSManaged var comment: String?
-    @NSManaged var movie: String?
+    @NSManaged var movie: AnyObject?
     @NSManaged var rating: NSNumber?
 
 }

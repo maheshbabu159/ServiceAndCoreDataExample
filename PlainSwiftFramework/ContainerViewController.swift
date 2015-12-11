@@ -190,8 +190,8 @@ extension ContainerViewController: SideMenuViewControllerDelegate {
 }
 
 extension ContainerViewController: UIGestureRecognizerDelegate {
-    // MARK: Gesture recognizer
     
+    // MARK: Gesture recognizer
     func handlePanGesture(recognizer: UIPanGestureRecognizer) {
         
         let gestureIsDraggingFromLeftToRight = (recognizer.velocityInView(view).x > 0)
@@ -217,7 +217,6 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
         case .Ended:
             if (menuSliderViewController != nil) {
                 
-                // animate the side panel open or closed based on whether the view has moved more or less than halfway
                 let hasMovedGreaterThanHalfway = recognizer.view!.center.x > view.bounds.size.width
                 animateLeftPanel(shouldExpand: hasMovedGreaterThanHalfway)
             }

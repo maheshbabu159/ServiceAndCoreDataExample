@@ -40,6 +40,13 @@ class BaseViewController: UIViewController, CMNetworkDelegate {
         
         presentViewController(alertController, animated: true, completion: nil)
     }
+    func showProgress(){
+       
+        //Show the progress bard
+        progressHUD = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        progressHUD.labelText = "Loading..."
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -65,10 +72,12 @@ class BaseViewController: UIViewController, CMNetworkDelegate {
     //MARK:Service delegate methods
     func dataDelegate(reponseData:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods){
         
+        progressHUD.hide(true)
         print("\(requestMethod) = \(reponseData)")
     }
     func networkError(errorMessage:String){
         
+        progressHUD.hide(true)
         self.showAlertView(GlobalVariables.appName, alertMsg: errorMessage)
     }
 

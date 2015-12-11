@@ -12,16 +12,33 @@ import CoreData
 class ReviewOrComment: NSManagedObject {
     
     // Insert code here to add functionality to your managed object subclass
-    class func addObject(context:NSManagedObjectContext) {
+    class func insertObject(dictionary:AnyObject, context:NSManagedObjectContext) {
         
         // Create Managed Object
         let entityDescription = NSEntityDescription.entityForName(GlobalVariables.CoreDataEntities.ReviewOrComment.rawValue as String, inManagedObjectContext: context)
         
-        let newEntity = NSManagedObject(entity: entityDescription!, insertIntoManagedObjectContext: context)
+        //Create new entity
+        let newEntity:ReviewOrComment = NSManagedObject(entity: entityDescription!, insertIntoManagedObjectContext: context) as! ReviewOrComment
         
-        newEntity.setValue("Bart", forKey: "first")
-        newEntity.setValue("Jacobs", forKey: "last")
-        
+        //Set propert values
+        if let objectId = dictionary.valueForKey("objectId"){
+            
+             newEntity.objectId = objectId as? String
+        }
+        if let comment = dictionary.valueForKey("comment"){
+            
+            newEntity.comment = comment as? String
+        }
+        if let movie:NSDictionary = dictionary.objectForKey("movie") as? NSDictionary{
+            
+            newEntity.movie = movie as NSDictionary
+        }
+        if let rating:NSNumber = dictionary.valueForKey("rating") as? NSNumber{
+            
+            newEntity.rating = rating
+        }
+       
+        //Save the object
         do {
             
             try newEntity.managedObjectContext?.save()
@@ -32,6 +49,7 @@ class ReviewOrComment: NSManagedObject {
         }
         
     }
+
     class func deleteObject() {
         
         
@@ -40,9 +58,9 @@ class ReviewOrComment: NSManagedObject {
         
         
     }
-    class func truncateAllObject() {
+    class func truncateAllObjects(context:NSManagedObjectContext) {
         
-        
+        CommonOperations.truncateAllObjects(GlobalVariables.CoreDataEntities.ReviewOrComment.rawValue as String, context: context)
     }
     class func fetchAllObjects(context:NSManagedObjectContext) -> NSArray {
         

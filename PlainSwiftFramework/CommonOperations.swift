@@ -34,4 +34,29 @@ class CommonOperations: NSObject {
             return NSArray()
         }
     }
+    class func truncateAllObjects(entityName:String, context:NSManagedObjectContext) {
+        
+        //Fetch object
+        let fetchRequest = NSFetchRequest()
+        
+        //Fetch request properties
+        fetchRequest.entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext: context)
+        fetchRequest.includesPropertyValues = false
+        
+        //Execute request
+        do {
+            if let resultsArray = try context.executeFetchRequest(fetchRequest) as? [NSManagedObject] {
+               
+                for result in resultsArray {
+                    
+                    context.deleteObject(result)
+                }
+                
+                try context.save()
+            }
+        } catch {
+            
+            print(error as NSError)
+        }
+    }
 }

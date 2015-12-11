@@ -12,9 +12,25 @@ import CoreData
 class Movies: NSManagedObject {
     
     // Insert code here to add functionality to your managed object subclass
-    class func addObject(context:NSManagedObjectContext) {
+    class func insertObject(context:NSManagedObjectContext) {
         
+        // Create Managed Object
+        let entityDescription = NSEntityDescription.entityForName(GlobalVariables.CoreDataEntities.ReviewOrComment.rawValue as String, inManagedObjectContext: context)
         
+        let newEntity = NSManagedObject(entity: entityDescription!, insertIntoManagedObjectContext: context)
+        
+        newEntity.setValue("Bart", forKey: "first")
+        newEntity.setValue("Jacobs", forKey: "last")
+        
+        do {
+            
+            try newEntity.managedObjectContext?.save()
+            
+        } catch {
+            
+            print(error)
+        }
+
         
     }
     class func deleteObject() {

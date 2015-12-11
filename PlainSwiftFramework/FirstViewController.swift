@@ -11,7 +11,7 @@ import CoreData
 
 class FirstViewController: BaseViewController {
     
-    let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    let appDelegate:AppDelegate! = UIApplication.sharedApplication().delegate as! AppDelegate
     
     
     override func viewDidLoad() {
@@ -22,9 +22,7 @@ class FirstViewController: BaseViewController {
         
         let parameters = ["method":GlobalVariables.RequestAPIMethods.getComments.rawValue,"movieId":"lQl9OfB40U"]
         
-        Movies.addObject(appDelegate.managedObjectContext)
-        
-        
+        super.showProgress()
         NetworkManager.postRequest(parameters, delegate: self)
     }
 
@@ -54,7 +52,23 @@ class FirstViewController: BaseViewController {
             
             if let rootDictionary = reponseData as? [String:AnyObject]{
             
-                print(rootDictionary)
+                if let resultArray:[AnyObject] = rootDictionary["result"] as? [AnyObject]{
+                    
+                    //Remove all objects
+                    ReviewOrComment.truncateAllObjects(self.appDelegate.managedObjectContext)
+                    
+                    //Insert all records
+                    for dictionary in resultArray{
+                        
+                        ReviewOrComment.insertObject(dictionary, context: self.appDelegate.managedObjectContext)
+                        
+                    }
+                    
+
+                    //Show the result count
+                    let array:NSArray = ReviewOrComment.fetchAllObjects(self.appDelegate.managedObjectContext)
+                    print(array.count)
+                }
             }
 
             break
