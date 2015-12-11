@@ -17,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
+        GlobalSettings.setNavigationBarProperties()
+        
+        //Move to home page...
+        let containerViewController = ContainerViewController()
+        containerViewController.selectedIndex = 0
+        self.window?.rootViewController = containerViewController
+        
         return true
     }
 

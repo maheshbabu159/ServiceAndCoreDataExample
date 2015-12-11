@@ -11,15 +11,7 @@ import CoreData
 
 class CommonOperations: NSObject {
 
-    // Insert code here to add functionality to your managed object subclass
-    class func addObject(entityName:String, context:NSManagedObjectContext) {
-        
-        // Create Managed Object
-        let entityDescription = NSEntityDescription.entityForName(entityName, inManagedObjectContext: context)
-        let newPerson = NSManagedObject(entity: entityDescription!, insertIntoManagedObjectContext: context)
-        
-        
-    }
+  
     class func fetchAllObjects(entityName:String, context:NSManagedObjectContext) -> NSArray {
         
         // Initialize Fetch Request

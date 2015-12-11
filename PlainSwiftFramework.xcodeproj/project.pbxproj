@@ -10,6 +10,15 @@
 		0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4C1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4D1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A621C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A631C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A641C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A6A1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A6B1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A6C1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A6F1C1AC54900ABED38 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
+		0E7F7A701C1AC54900ABED38 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
 		0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFEF5D1C19B2B1004EA2AE /* AppDelegate.swift */; };
 		0EFFEF631C19B2B1004EA2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFEF611C19B2B1004EA2AE /* Main.storyboard */; };
 		0EFFEF661C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFEF641C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld */; };
@@ -72,6 +81,9 @@
 
 /* Begin PBXFileReference section */
 		0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonOperations.swift; sourceTree = "<group>"; };
+		0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		0EFFEF5A1C19B2B0004EA2AE /* PlainSwiftFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlainSwiftFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFFEF5D1C19B2B1004EA2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFFEF621C19B2B1004EA2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7F7A541C1AAF7700ABED38 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */,
+				0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
 		0EFFEF511C19B2B0004EA2AE = {
 			isa = PBXGroup;
 			children = (
@@ -201,8 +222,10 @@
 		0EFFEF8F1C19B302004EA2AE /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				0EFFEF911C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift */,
-				0EFFEF921C19B318004EA2AE /* Movies+CoreDataProperties.swift */,
+				0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */,
+				0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */,
+				0EFFEF991C19B326004EA2AE /* Movies.swift */,
+				0EFFEF9A1C19B326004EA2AE /* ReviewOrComment.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -210,9 +233,8 @@
 		0EFFEF901C19B30B004EA2AE /* Properties */ = {
 			isa = PBXGroup;
 			children = (
-				0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */,
-				0EFFEF991C19B326004EA2AE /* Movies.swift */,
-				0EFFEF9A1C19B326004EA2AE /* ReviewOrComment.swift */,
+				0EFFEF911C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift */,
+				0EFFEF921C19B318004EA2AE /* Movies+CoreDataProperties.swift */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -220,6 +242,7 @@
 		0EFFEFA11C19B32E004EA2AE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0E7F7A541C1AAF7700ABED38 /* Slider */,
 				0EFFEFA21C19B335004EA2AE /* FirstViewController.swift */,
 				0EFFEFA31C19B335004EA2AE /* BaseViewController.swift */,
 			);
@@ -456,13 +479,16 @@
 				0EFFEFAC1C19B34F004EA2AE /* NetworkManager.swift in Sources */,
 				0EFFEF9B1C19B326004EA2AE /* Movies.swift in Sources */,
 				0EFFEFA41C19B335004EA2AE /* FirstViewController.swift in Sources */,
+				0E7F7A621C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
 				0EFFEF661C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld in Sources */,
 				0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
+				0E7F7A6A1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFA71C19B335004EA2AE /* BaseViewController.swift in Sources */,
 				0EFFEFB51C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
 				0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */,
 				0EFFEF961C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFBF1C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
+				0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */,
 				0EFFEF9E1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFC31C19B4A3004EA2AE /* Constants.swift in Sources */,
 			);
@@ -474,11 +500,14 @@
 			files = (
 				0EFFEF971C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFC41C19B4A3004EA2AE /* Constants.swift in Sources */,
+				0E7F7A6B1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFB61C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
+				0E7F7A631C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
 				0EFFEF941C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift in Sources */,
 				0EFFEFC01C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
 				0EFFEF9C1C19B326004EA2AE /* Movies.swift in Sources */,
 				0EFFEFA51C19B335004EA2AE /* FirstViewController.swift in Sources */,
+				0E7F7A6F1C1AC54900ABED38 /* MenuItem.swift in Sources */,
 				0EFFEFAD1C19B34F004EA2AE /* NetworkManager.swift in Sources */,
 				0EFFEF9F1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFA81C19B335004EA2AE /* BaseViewController.swift in Sources */,
@@ -493,11 +522,14 @@
 			files = (
 				0EFFEF981C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFC51C19B4A3004EA2AE /* Constants.swift in Sources */,
+				0E7F7A6C1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFB71C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
+				0E7F7A641C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
 				0EFFEF951C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift in Sources */,
 				0EFFEFC11C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
 				0EFFEF9D1C19B326004EA2AE /* Movies.swift in Sources */,
 				0EFFEFA61C19B335004EA2AE /* FirstViewController.swift in Sources */,
+				0E7F7A701C1AC54900ABED38 /* MenuItem.swift in Sources */,
 				0EFFEFAE1C19B34F004EA2AE /* NetworkManager.swift in Sources */,
 				0EFFEFA01C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFA91C19B335004EA2AE /* BaseViewController.swift in Sources */,

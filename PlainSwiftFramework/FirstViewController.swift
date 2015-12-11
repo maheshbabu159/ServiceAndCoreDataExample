@@ -18,6 +18,8 @@ class FirstViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        super.showMenuButton()
+        
         let parameters = ["method":GlobalVariables.RequestAPIMethods.getComments.rawValue,"movieId":"lQl9OfB40U"]
         
         Movies.addObject(appDelegate.managedObjectContext)

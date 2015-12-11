@@ -321,7 +321,7 @@ class GlobalSettings {
             
         })
         
-    }
+    }*/
     class func isImageAvailable(photo_url:NSString) -> Bool {
         
         let fileUrl = NSURL(string: photo_url as String)
@@ -340,7 +340,7 @@ class GlobalSettings {
             
             return false
         }
-    }*/
+    }
     /*class func getImageFromPath(photo_url:NSString) -> UIImage {
         
         let fileUrl = NSURL(string: photo_url as String)
@@ -367,7 +367,7 @@ class GlobalSettings {
             
             var error:NSError?
             
-            fileManager.removeItemAtPath(path, error: &error)
+            fileManager.removeItemAtPath(path)
             
         }
     }*/

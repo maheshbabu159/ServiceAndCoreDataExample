@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import MBProgressHUD
+
+protocol MenuButtonDelegate {
+    
+    func toggleLeftPanel()
+    func collapseSidePanels()
+}
 
 class BaseViewController: UIViewController, CMNetworkDelegate {
+    
+    var menuButtonDlegate: MenuButtonDelegate?
+    var progressHUD = MBProgressHUD()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +49,22 @@ class BaseViewController: UIViewController, CMNetworkDelegate {
         // Pass the selected object to the new view controller.
     }
     */
- 
-    
+    //MARK:Menu button delegate methods
+    func showMenuButton(){
+     
+        let menuButton : UIBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: "menuButtonClick")
+        menuButton.image = UIImage(named: "menu_button")
+        self.navigationItem.leftBarButtonItem = menuButton
+    }
+    func menuButtonClick() {
+        
+        super.view.endEditing(true)
+        self.menuButtonDlegate!.toggleLeftPanel()
+        
+    }
     //MARK:Service delegate methods
     func dataDelegate(reponseData:AnyObject, requestMethod:GlobalVariables.RequestAPIMethods){
+        
         print("\(requestMethod) = \(reponseData)")
     }
     func networkError(errorMessage:String){

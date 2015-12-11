@@ -18,7 +18,7 @@ struct GlobalVariables {
     static let blue_color = "#4AB3EF"
     static let green_color = "#fc4f02"
     static let yellow_color = "#fc4f02"
-    static let appColor = "#D831AF"
+    static let appColor = "#F04300"
     
     static let timeInterval = 60.0
     
