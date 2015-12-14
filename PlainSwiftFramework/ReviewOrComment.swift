@@ -24,6 +24,11 @@ class ReviewOrComment: NSManagedObject {
         if let objectId = dictionary.valueForKey("objectId"){
             
              newEntity.objectId = objectId as? String
+        
+        }else{
+            
+            let uuid = NSUUID().UUIDString
+            newEntity.objectId = uuid as String
         }
         if let comment = dictionary.valueForKey("comment"){
             

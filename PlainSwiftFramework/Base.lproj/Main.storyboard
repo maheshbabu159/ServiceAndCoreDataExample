@@ -78,7 +78,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm_navigation_header" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-uN-0Ul">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-uN-0Ul">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm_menu_user" translatesAutoresizingMaskIntoConstraints="NO" id="TSW-BJ-cGz">
@@ -123,7 +123,6 @@
     </scenes>
     <resources>
         <image name="cm_menu_user" width="50" height="50"/>
-        <image name="cm_navigation_header" width="411" height="231"/>
         <image name="search-menu" width="160" height="160"/>
     </resources>
 </document>
