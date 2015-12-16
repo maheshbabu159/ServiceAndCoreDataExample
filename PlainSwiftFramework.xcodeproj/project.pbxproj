@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3629801C215CE6007AACFF /* XMLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E3629811C215CE6007AACFF /* XMLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E3629821C215CE6007AACFF /* XMLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E3629841C216562007AACFF /* Books.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0E3629831C216562007AACFF /* Books.xml */; settings = {ASSET_TAGS = (); }; };
+		0E3629851C216562007AACFF /* Books.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0E3629831C216562007AACFF /* Books.xml */; settings = {ASSET_TAGS = (); }; };
+		0E3629861C216562007AACFF /* Books.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0E3629831C216562007AACFF /* Books.xml */; settings = {ASSET_TAGS = (); }; };
+		0E3629881C216640007AACFF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3629871C216640007AACFF /* Book.swift */; settings = {ASSET_TAGS = (); }; };
+		0E3629891C216640007AACFF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3629871C216640007AACFF /* Book.swift */; settings = {ASSET_TAGS = (); }; };
+		0E36298A1C216640007AACFF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3629871C216640007AACFF /* Book.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4C1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4D1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
@@ -80,6 +89,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLTableViewController.swift; sourceTree = "<group>"; };
+		0E3629831C216562007AACFF /* Books.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Books.xml; sourceTree = "<group>"; };
+		0E3629871C216640007AACFF /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonOperations.swift; sourceTree = "<group>"; };
 		0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +247,7 @@
 				0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */,
 				0EFFEF911C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift */,
 				0EFFEF921C19B318004EA2AE /* Movies+CoreDataProperties.swift */,
+				0E3629871C216640007AACFF /* Book.swift */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -245,6 +258,7 @@
 				0E7F7A541C1AAF7700ABED38 /* Slider */,
 				0EFFEFA21C19B335004EA2AE /* FirstViewController.swift */,
 				0EFFEFA31C19B335004EA2AE /* BaseViewController.swift */,
+				0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -269,6 +283,7 @@
 			children = (
 				0EFFEFC61C19B537004EA2AE /* Objective-Bridging-Header.h */,
 				0EFFEF6C1C19B2B1004EA2AE /* Info.plist */,
+				0E3629831C216562007AACFF /* Books.xml */,
 			);
 			name = "Supporting Files";
 			path = ..;
@@ -397,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3629841C216562007AACFF /* Books.xml in Resources */,
 				0EFFEF6B1C19B2B1004EA2AE /* LaunchScreen.storyboard in Resources */,
 				0EFFEF681C19B2B1004EA2AE /* Assets.xcassets in Resources */,
 				0EFFEFBB1C19B483004EA2AE /* Readme.txt in Resources */,
@@ -408,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3629851C216562007AACFF /* Books.xml in Resources */,
 				0EFFEFBC1C19B483004EA2AE /* Readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3629861C216562007AACFF /* Books.xml in Resources */,
 				0EFFEFBD1C19B483004EA2AE /* Readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,10 +502,12 @@
 				0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
 				0E7F7A6A1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFA71C19B335004EA2AE /* BaseViewController.swift in Sources */,
+				0E3629801C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
 				0EFFEFB51C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
 				0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */,
 				0EFFEF961C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFBF1C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
+				0E3629881C216640007AACFF /* Book.swift in Sources */,
 				0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */,
 				0EFFEF9E1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFC31C19B4A3004EA2AE /* Constants.swift in Sources */,
@@ -513,6 +533,8 @@
 				0EFFEFA81C19B335004EA2AE /* BaseViewController.swift in Sources */,
 				0E7F7A4C1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
 				0EFFEF761C19B2B1004EA2AE /* PlainSwiftFrameworkTests.swift in Sources */,
+				0E3629811C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
+				0E3629891C216640007AACFF /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +557,8 @@
 				0EFFEFA91C19B335004EA2AE /* BaseViewController.swift in Sources */,
 				0E7F7A4D1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
 				0EFFEF811C19B2B1004EA2AE /* PlainSwiftFrameworkUITests.swift in Sources */,
+				0E3629821C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
+				0E36298A1C216640007AACFF /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

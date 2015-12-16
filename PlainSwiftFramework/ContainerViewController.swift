@@ -19,7 +19,8 @@ enum SlideOutState {
 enum DetailsViewControllerEnum:Int {
     
     case FirstViewController = 0
-    
+    case XMLViewController = 1
+
 }
 class ContainerViewController: UIViewController {
     
@@ -59,6 +60,20 @@ class ContainerViewController: UIViewController {
         case DetailsViewControllerEnum.FirstViewController.rawValue:
             
             let detailViewController:FirstViewController = UIStoryboard.firstViewController()!
+            detailViewController.menuButtonDlegate = self
+            
+            // wrap the centerViewController in a navigation controller, so we can push views to it
+            // and display bar button items in the navigation bar
+            centerNavigationController = UINavigationController(rootViewController: detailViewController)
+            //Navigate to details view
+            view.addSubview(centerNavigationController.view)
+            addChildViewController(centerNavigationController)
+            
+            centerNavigationController.didMoveToParentViewController(self)
+        
+        case DetailsViewControllerEnum.XMLViewController.rawValue:
+            
+            let detailViewController:XMLTableViewController = UIStoryboard.xMLTableViewController()!
             detailViewController.menuButtonDlegate = self
             
             // wrap the centerViewController in a navigation controller, so we can push views to it
@@ -238,6 +253,10 @@ extension ContainerViewController: MenuButtonDelegate {
         case DetailsViewControllerEnum.FirstViewController.rawValue:
             
             addDetailsViewContoller(DetailsViewControllerEnum.FirstViewController.rawValue)
+      
+        case DetailsViewControllerEnum.XMLViewController.rawValue:
+            
+            addDetailsViewContoller(DetailsViewControllerEnum.XMLViewController.rawValue)
             
         default:
             break
@@ -261,6 +280,11 @@ private extension UIStoryboard{
     class func firstViewController() -> FirstViewController? {
         
         return mainStoryboard().instantiateViewControllerWithIdentifier("FirstViewController") as? FirstViewController
+        
+    }
+    class func xMLTableViewController() -> XMLTableViewController? {
+        
+        return mainStoryboard().instantiateViewControllerWithIdentifier("XMLTableViewController") as? XMLTableViewController
         
     }
     
