@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1E35A81C22935E00310CB8 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35A91C22935E00310CB8 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35AA1C22935E00310CB8 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35AC1C2293E000310CB8 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35AD1C2293E000310CB8 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35AE1C2293E000310CB8 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B31C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B41C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B51C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B61C22943700310CB8 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B01C22943700310CB8 /* MoviesModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B71C22943700310CB8 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B01C22943700310CB8 /* MoviesModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B81C22943700310CB8 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B01C22943700310CB8 /* MoviesModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35B91C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B11C22943700310CB8 /* CommentsModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35BA1C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B11C22943700310CB8 /* CommentsModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35BB1C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B11C22943700310CB8 /* CommentsModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35BC1C22943700310CB8 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B21C22943700310CB8 /* CommentsModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35BD1C22943700310CB8 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B21C22943700310CB8 /* CommentsModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35BE1C22943700310CB8 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35B21C22943700310CB8 /* CommentsModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35C01C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35C11C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35C21C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35C41C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35C51C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0E1E35C61C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0E3629801C215CE6007AACFF /* XMLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0E3629811C215CE6007AACFF /* XMLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0E3629821C215CE6007AACFF /* XMLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -89,6 +113,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0E1E35B01C22943700310CB8 /* MoviesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		0E1E35B11C22943700310CB8 /* CommentsModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommentsModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0E1E35B21C22943700310CB8 /* CommentsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
+		0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesContainerViewController.swift; sourceTree = "<group>"; };
+		0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesGridViewController.swift; sourceTree = "<group>"; };
 		0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLTableViewController.swift; sourceTree = "<group>"; };
 		0E3629831C216562007AACFF /* Books.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Books.xml; sourceTree = "<group>"; };
 		0E3629871C216640007AACFF /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -234,6 +266,8 @@
 		0EFFEF8F1C19B302004EA2AE /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				0E1E35B01C22943700310CB8 /* MoviesModel.swift */,
+				0E1E35B21C22943700310CB8 /* CommentsModel.swift */,
 				0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */,
 				0EFFEF991C19B326004EA2AE /* Movies.swift */,
 				0EFFEF9A1C19B326004EA2AE /* ReviewOrComment.swift */,
@@ -244,6 +278,8 @@
 		0EFFEF901C19B30B004EA2AE /* Properties */ = {
 			isa = PBXGroup;
 			children = (
+				0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */,
+				0E1E35B11C22943700310CB8 /* CommentsModel+CoreDataProperties.swift */,
 				0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */,
 				0EFFEF911C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift */,
 				0EFFEF921C19B318004EA2AE /* Movies+CoreDataProperties.swift */,
@@ -259,6 +295,10 @@
 				0EFFEFA21C19B335004EA2AE /* FirstViewController.swift */,
 				0EFFEFA31C19B335004EA2AE /* BaseViewController.swift */,
 				0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */,
+				0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */,
+				0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */,
+				0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */,
+				0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -493,17 +533,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1E35AC1C2293E000310CB8 /* MovieDetailsViewController.swift in Sources */,
 				0EFFEF931C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift in Sources */,
 				0EFFEFAC1C19B34F004EA2AE /* NetworkManager.swift in Sources */,
 				0EFFEF9B1C19B326004EA2AE /* Movies.swift in Sources */,
 				0EFFEFA41C19B335004EA2AE /* FirstViewController.swift in Sources */,
 				0E7F7A621C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
+				0E1E35A81C22935E00310CB8 /* MoviesTableViewController.swift in Sources */,
+				0E1E35C41C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */,
+				0E1E35B91C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */,
 				0EFFEF661C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld in Sources */,
+				0E1E35B61C22943700310CB8 /* MoviesModel.swift in Sources */,
 				0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
+				0E1E35C01C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */,
 				0E7F7A6A1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFA71C19B335004EA2AE /* BaseViewController.swift in Sources */,
+				0E1E35BC1C22943700310CB8 /* CommentsModel.swift in Sources */,
 				0E3629801C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
 				0EFFEFB51C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
+				0E1E35B31C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */,
 				0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */,
 				0EFFEF961C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFBF1C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
@@ -520,10 +568,16 @@
 			files = (
 				0EFFEF971C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFC41C19B4A3004EA2AE /* Constants.swift in Sources */,
+				0E1E35AD1C2293E000310CB8 /* MovieDetailsViewController.swift in Sources */,
+				0E1E35C11C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */,
 				0E7F7A6B1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFB61C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
+				0E1E35BA1C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */,
 				0E7F7A631C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
+				0E1E35B41C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */,
 				0EFFEF941C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift in Sources */,
+				0E1E35A91C22935E00310CB8 /* MoviesTableViewController.swift in Sources */,
+				0E1E35BD1C22943700310CB8 /* CommentsModel.swift in Sources */,
 				0EFFEFC01C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
 				0EFFEF9C1C19B326004EA2AE /* Movies.swift in Sources */,
 				0EFFEFA51C19B335004EA2AE /* FirstViewController.swift in Sources */,
@@ -532,6 +586,8 @@
 				0EFFEF9F1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFA81C19B335004EA2AE /* BaseViewController.swift in Sources */,
 				0E7F7A4C1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
+				0E1E35C51C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */,
+				0E1E35B71C22943700310CB8 /* MoviesModel.swift in Sources */,
 				0EFFEF761C19B2B1004EA2AE /* PlainSwiftFrameworkTests.swift in Sources */,
 				0E3629811C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
 				0E3629891C216640007AACFF /* Book.swift in Sources */,
@@ -544,10 +600,16 @@
 			files = (
 				0EFFEF981C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFC51C19B4A3004EA2AE /* Constants.swift in Sources */,
+				0E1E35AE1C2293E000310CB8 /* MovieDetailsViewController.swift in Sources */,
+				0E1E35C21C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */,
 				0E7F7A6C1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFB71C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
+				0E1E35BB1C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */,
 				0E7F7A641C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
+				0E1E35B51C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */,
 				0EFFEF951C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift in Sources */,
+				0E1E35AA1C22935E00310CB8 /* MoviesTableViewController.swift in Sources */,
+				0E1E35BE1C22943700310CB8 /* CommentsModel.swift in Sources */,
 				0EFFEFC11C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
 				0EFFEF9D1C19B326004EA2AE /* Movies.swift in Sources */,
 				0EFFEFA61C19B335004EA2AE /* FirstViewController.swift in Sources */,
@@ -556,6 +618,8 @@
 				0EFFEFA01C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFA91C19B335004EA2AE /* BaseViewController.swift in Sources */,
 				0E7F7A4D1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
+				0E1E35C61C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */,
+				0E1E35B81C22943700310CB8 /* MoviesModel.swift in Sources */,
 				0EFFEF811C19B2B1004EA2AE /* PlainSwiftFrameworkUITests.swift in Sources */,
 				0E3629821C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
 				0E36298A1C216640007AACFF /* Book.swift in Sources */,

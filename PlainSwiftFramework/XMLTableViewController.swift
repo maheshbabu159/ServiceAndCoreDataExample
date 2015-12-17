@@ -91,6 +91,7 @@ class XMLTableViewController: BaseViewController,NSXMLParserDelegate {
             date.appendString(string)
             
         }
+    
     }
     
     //Tableview Methods

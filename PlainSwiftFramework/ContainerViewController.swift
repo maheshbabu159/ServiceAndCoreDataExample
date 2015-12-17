@@ -18,7 +18,7 @@ enum SlideOutState {
 
 enum DetailsViewControllerEnum:Int {
     
-    case FirstViewController = 0
+    case MoviesContainerViewController = 0
     case XMLViewController = 1
 
 }
@@ -57,9 +57,10 @@ class ContainerViewController: UIViewController {
         
         switch(viewControllerEnumValue){
             
-        case DetailsViewControllerEnum.FirstViewController.rawValue:
+        case DetailsViewControllerEnum.MoviesContainerViewController.rawValue:
             
-            let detailViewController:FirstViewController = UIStoryboard.firstViewController()!
+            let detailViewController:MoviesContainerViewController = UIStoryboard.moviesContainerViewController()!
+            
             detailViewController.menuButtonDlegate = self
             
             // wrap the centerViewController in a navigation controller, so we can push views to it
@@ -195,9 +196,9 @@ extension ContainerViewController: SideMenuViewControllerDelegate {
         
         centerNavigationController.removeFromParentViewController()
         
-        if(row == 0){
+        if(row == DetailsViewControllerEnum.MoviesContainerViewController.rawValue){
             
-            addDetailsViewContoller(DetailsViewControllerEnum.FirstViewController.rawValue)
+            addDetailsViewContoller(DetailsViewControllerEnum.MoviesContainerViewController.rawValue)
             
         }
     }
@@ -250,9 +251,9 @@ extension ContainerViewController: MenuButtonDelegate {
         
         switch(row){
             
-        case DetailsViewControllerEnum.FirstViewController.rawValue:
+        case DetailsViewControllerEnum.MoviesContainerViewController.rawValue:
             
-            addDetailsViewContoller(DetailsViewControllerEnum.FirstViewController.rawValue)
+            addDetailsViewContoller(DetailsViewControllerEnum.MoviesContainerViewController.rawValue)
       
         case DetailsViewControllerEnum.XMLViewController.rawValue:
             
@@ -277,9 +278,9 @@ private extension UIStoryboard{
         
     }
     
-    class func firstViewController() -> FirstViewController? {
+    class func moviesContainerViewController() -> MoviesContainerViewController? {
         
-        return mainStoryboard().instantiateViewControllerWithIdentifier("FirstViewController") as? FirstViewController
+        return mainStoryboard().instantiateViewControllerWithIdentifier("MoviesContainerViewController") as? MoviesContainerViewController
         
     }
     class func xMLTableViewController() -> XMLTableViewController? {

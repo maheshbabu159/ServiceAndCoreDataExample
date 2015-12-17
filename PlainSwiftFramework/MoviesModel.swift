@@ -1,16 +1,16 @@
 //
-//  Movies.swift
+//  MoviesModel.swift
+//  PlainSwiftFramework
 //
-//
-//  Created by maheshbabu.somineni on 12/10/15.
-//
+//  Created by maheshbabu.somineni on 12/17/15.
+//  Copyright © 2015 maheshbabu.somineni. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-class Movies: NSManagedObject {
-    
+class MoviesModel: NSManagedObject {
+
     // Insert code here to add functionality to your managed object subclass
     class func insertObject(context:NSManagedObjectContext) {
         
@@ -30,14 +30,14 @@ class Movies: NSManagedObject {
             
             print(error)
         }
-
+        
         
     }
     class func deleteObject(value:String,context:NSManagedObjectContext) {
         
         //Predicate
         let predicate = NSPredicate(format: "objectId = '\(value)'")
-
+        
         // Initialize Fetch Request
         let fetchRequest = NSFetchRequest()
         
@@ -61,7 +61,7 @@ class Movies: NSManagedObject {
             
             print(error as NSError)
         }
-
+        
     }
     class func updateObject() {
         
@@ -77,4 +77,5 @@ class Movies: NSManagedObject {
         
         return resultArray
     }
+
 }

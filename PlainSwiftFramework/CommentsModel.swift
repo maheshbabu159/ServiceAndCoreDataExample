@@ -1,16 +1,16 @@
 //
-//  ReviewOrComment.swift
-//  SwiftCoreDataSimpleDemo
+//  CommentsModel.swift
+//  PlainSwiftFramework
 //
-//  Created by maheshbabu.somineni on 12/10/15.
-//  Copyright © 2015 CHENHAO. All rights reserved.
+//  Created by maheshbabu.somineni on 12/17/15.
+//  Copyright © 2015 maheshbabu.somineni. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-class ReviewOrComment: NSManagedObject {
-    
+class CommentsModel: NSManagedObject {
+
     // Insert code here to add functionality to your managed object subclass
     class func insertObject(dictionary:AnyObject, context:NSManagedObjectContext) {
         
@@ -23,8 +23,8 @@ class ReviewOrComment: NSManagedObject {
         //Set propert values
         if let objectId = dictionary.valueForKey("objectId"){
             
-             newEntity.objectId = objectId as? String
-        
+            newEntity.objectId = objectId as? String
+            
         }else{
             
             let uuid = NSUUID().UUIDString
@@ -42,7 +42,7 @@ class ReviewOrComment: NSManagedObject {
             
             newEntity.rating = rating
         }
-       
+        
         //Save the object
         do {
             
@@ -54,7 +54,7 @@ class ReviewOrComment: NSManagedObject {
         }
         
     }
-
+    
     class func deleteObject() {
         
         
@@ -73,5 +73,6 @@ class ReviewOrComment: NSManagedObject {
         
         return resultArray
     }
-    
+
+
 }

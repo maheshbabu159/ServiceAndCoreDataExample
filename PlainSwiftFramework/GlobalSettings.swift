@@ -380,7 +380,7 @@ class GlobalSettings {
         
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
         
-        UINavigationBar.appearance().barTintColor = UIColor(rgba: GlobalVariables.appColor)
+        //UINavigationBar.appearance().barTintColor = UIColor(rgba: GlobalVariables.appColor)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
 
     }

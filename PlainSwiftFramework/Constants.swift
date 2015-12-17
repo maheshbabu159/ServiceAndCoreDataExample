@@ -87,8 +87,8 @@ struct GlobalVariables {
     }
     enum CoreDataEntities : NSString{
         
-        case Movies = "Movies"
-        case ReviewOrComment = "ReviewOrComment"
+        case MoviesModel = "MoviesModel"
+        case CommentsModel = "CommentsModel"
         
     }
     enum BookmarkType : NSString{
