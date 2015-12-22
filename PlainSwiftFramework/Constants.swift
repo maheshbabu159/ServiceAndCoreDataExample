@@ -80,10 +80,9 @@ struct GlobalVariables {
     static let request_type_value = "POST"
     
     enum RequestAPIMethods : NSString{
-        
+        case getMoviesByIndustry = "getMoviesByIndustry"
         case getComments = "getComments"
         case registerDevice = "registerDevice"
-        
     }
     enum CoreDataEntities : NSString{
         
@@ -92,24 +91,25 @@ struct GlobalVariables {
         
     }
     enum BookmarkType : NSString{
-        
         case Institute = "Institute"
         case Trainer = "Trainer"
         case Course = "Course"
-        
     }
-
-    
     enum SlideMenuItem : Int{
-        
         case HOME = 0
         case INSTITUTES = 1
         case COURSES = 2
         case ACCOUNT = 3
+    }
+    enum IndustryEnum : String{
+        case All = "All"
+        case Hollywood = "Hollywood"
+        case Bollywood = "Bollywood"
+        case Tollywood = "Tollywood"
+        case Kollywood = "Kollywood"
+        case Mollywood = "Mollywood"
+        case Sandalwood = "Sandalwood"
 
     }
-     
-
-  
 }
 

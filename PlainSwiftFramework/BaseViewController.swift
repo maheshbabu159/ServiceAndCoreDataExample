@@ -17,6 +17,7 @@ protocol MenuButtonDelegate {
 
 class BaseViewController: UIViewController, CMNetworkDelegate {
     
+    let appDelegate:AppDelegate! = UIApplication.sharedApplication().delegate as! AppDelegate
     var menuButtonDlegate: MenuButtonDelegate?
     var progressHUD = MBProgressHUD()
 

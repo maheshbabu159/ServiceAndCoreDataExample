@@ -11,9 +11,6 @@ import CoreData
 
 class FirstViewController: BaseViewController {
     
-    let appDelegate:AppDelegate! = UIApplication.sharedApplication().delegate as! AppDelegate
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

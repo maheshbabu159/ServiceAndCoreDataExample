@@ -8,20 +8,26 @@
 
 import UIKit
 
-class MoviesGridViewController: UIViewController {
+class MoviesGridViewController: BaseViewController {
+    @IBOutlet var moviesCollectionView:UICollectionView!
     var parentDelegate: MoviesContainerViewController!
-
+    var array:NSArray!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.moviesCollectionView.backgroundColor = UIColor.whiteColor()
+        self.array = NSArray()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func refreshView(){
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -33,4 +39,22 @@ class MoviesGridViewController: UIViewController {
     }
     */
 
+}
+extension MoviesGridViewController:UICollectionViewDataSource,UICollectionViewDelegate{
+
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        
+        return 1
+    }
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return self.array.count
+    }
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+       
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
+        return cell
+    }
+    
+    
 }

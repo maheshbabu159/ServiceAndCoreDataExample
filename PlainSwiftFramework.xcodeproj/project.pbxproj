@@ -216,6 +216,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0DF2B81C294DBA00B03690 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */,
+				0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */,
+				0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */,
+				0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */,
+			);
+			name = Movies;
+			sourceTree = "<group>";
+		};
 		0E7F7A541C1AAF7700ABED38 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,16 +354,13 @@
 		0EFFEFA11C19B32E004EA2AE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0E0DF2B81C294DBA00B03690 /* Movies */,
 				0EF3AB6B1C292D53007580F2 /* HomeScreenViewController.swift */,
 				0EF3AB6C1C292D53007580F2 /* InsertRecordViewController.swift */,
 				0E7F7A541C1AAF7700ABED38 /* Slider */,
 				0EFFEFA21C19B335004EA2AE /* FirstViewController.swift */,
 				0EFFEFA31C19B335004EA2AE /* BaseViewController.swift */,
 				0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */,
-				0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */,
-				0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */,
-				0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */,
-				0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */,
 				0EF3AB5F1C2926E3007580F2 /* FMDBViewController.swift */,
 			);
 			name = ViewControllers;

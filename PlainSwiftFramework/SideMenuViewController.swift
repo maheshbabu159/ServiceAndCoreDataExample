@@ -2,7 +2,7 @@
 //  SideMenuViewController.swift
 //  CyberMoney
 //
-//  Created by seneca on 11/9/15.
+//  Created by maheshbabu.somineni on 11/9/15.
 //  Copyright © 2015 maheshbabu.somineni. All rights reserved.
 //
 

@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Move to home page...
         let containerViewController = ContainerViewController()
-        containerViewController.selectedIndex = 2
+        containerViewController.selectedIndex = 0
         self.window?.rootViewController = containerViewController
         
         return true
