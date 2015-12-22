@@ -20,6 +20,8 @@ enum DetailsViewControllerEnum:Int {
     
     case MoviesContainerViewController = 0
     case XMLViewController = 1
+    case FMDBViewController = 2
+
 
 }
 class ContainerViewController: UIViewController {
@@ -85,6 +87,21 @@ class ContainerViewController: UIViewController {
             addChildViewController(centerNavigationController)
             
             centerNavigationController.didMoveToParentViewController(self)
+    
+        case DetailsViewControllerEnum.FMDBViewController.rawValue:
+            
+            let detailViewController:FMDBViewController = UIStoryboard.fmdbViewController()!
+            detailViewController.menuButtonDlegate = self
+            
+            // wrap the centerViewController in a navigation controller, so we can push views to it
+            // and display bar button items in the navigation bar
+            centerNavigationController = UINavigationController(rootViewController: detailViewController)
+            //Navigate to details view
+            view.addSubview(centerNavigationController.view)
+            addChildViewController(centerNavigationController)
+            
+            centerNavigationController.didMoveToParentViewController(self)
+            
 
         default:
             break
@@ -258,6 +275,10 @@ extension ContainerViewController: MenuButtonDelegate {
         case DetailsViewControllerEnum.XMLViewController.rawValue:
             
             addDetailsViewContoller(DetailsViewControllerEnum.XMLViewController.rawValue)
+        
+        case DetailsViewControllerEnum.FMDBViewController.rawValue:
+            
+            addDetailsViewContoller(DetailsViewControllerEnum.FMDBViewController.rawValue)
             
         default:
             break
@@ -286,6 +307,11 @@ private extension UIStoryboard{
     class func xMLTableViewController() -> XMLTableViewController? {
         
         return mainStoryboard().instantiateViewControllerWithIdentifier("XMLTableViewController") as? XMLTableViewController
+        
+    }
+    class func fmdbViewController() -> FMDBViewController? {
+        
+        return mainStoryboard().instantiateViewControllerWithIdentifier("FMDBViewController") as? FMDBViewController
         
     }
     

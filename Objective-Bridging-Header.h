@@ -10,5 +10,6 @@
 #define GameFramework_GameFramework_Bridging_Header_h
 
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "FMDB.h"
 
 #endif

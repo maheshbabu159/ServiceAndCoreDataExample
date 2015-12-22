@@ -26,7 +26,7 @@ class MenuItem {
   class func getAllMenuItems() -> Array<MenuItem> {
     
     return [ MenuItem(title: "Address", creator: "address", image: UIImage(named: "search-menu.png")),
-        MenuItem(title: "XML", creator: "XML", image: UIImage(named: "search-menu.png"))]
+        MenuItem(title: "XML", creator: "XML", image: UIImage(named: "search-menu.png")), MenuItem(title: "FMDB", creator: "address", image: UIImage(named: "search-menu.png"))]
    
     }
   

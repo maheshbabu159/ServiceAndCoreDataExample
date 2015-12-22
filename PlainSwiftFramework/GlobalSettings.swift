@@ -384,6 +384,35 @@ class GlobalSettings {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
 
     }
+    class func getPath(fileName: String) -> String {
+        
+        let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        let fileURL = documentsURL.URLByAppendingPathComponent(fileName)
+        
+        return fileURL.path!
+    }
     
- 
+    class func copyFile(fileName: NSString) -> Bool {
+        let dbPath: String = getPath(fileName as String)
+        let fileManager = NSFileManager.defaultManager()
+        if !fileManager.fileExistsAtPath(dbPath) {
+            let documentsURL = NSBundle.mainBundle().resourceURL
+            let fromPath = documentsURL!.URLByAppendingPathComponent(fileName as String)
+            
+            var error : NSError?
+            do {
+                try fileManager.copyItemAtPath(fromPath.path!, toPath: dbPath)
+            } catch let error1 as NSError {
+                error = error1
+            }
+          
+            if (error == nil) {
+                return true
+            }else {
+                return false
+            }
+        }else{
+            return false
+        }
+    }
 }

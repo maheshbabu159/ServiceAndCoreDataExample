@@ -33,36 +33,7 @@ class MoviesModel: NSManagedObject {
         
         
     }
-    class func deleteObject(value:String,context:NSManagedObjectContext) {
-        
-        //Predicate
-        let predicate = NSPredicate(format: "objectId = '\(value)'")
-        
-        // Initialize Fetch Request
-        let fetchRequest = NSFetchRequest()
-        
-        // Create Entity Description
-        let entityDescription = NSEntityDescription.entityForName(GlobalVariables.CoreDataEntities.MoviesModel.rawValue as String, inManagedObjectContext: context)
-        
-        // Configure Fetch Request
-        fetchRequest.entity = entityDescription
-        fetchRequest.predicate = predicate
-        
-        do {
-            
-            let result = try context.executeFetchRequest(fetchRequest)
-            
-            for object in result{
-                
-                context.deleteObject(object as! NSManagedObject)
-            }
-            
-        } catch {
-            
-            print(error as NSError)
-        }
-        
-    }
+
     class func updateObject() {
         
         

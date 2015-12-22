@@ -4,25 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--FirstView-->
-        <scene sceneID="Q2j-SK-sic">
-            <objects>
-                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MLM-Kh-Sif" customClass="FirstViewController" customModule="PlainSwiftFramework" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SYF-t9-3pb"/>
-                        <viewControllerLayoutGuide type="bottom" id="u9e-4a-Eu8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="b6p-VT-ONd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="FirstView" id="Fob-9O-hJ8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ffh-g2-Bk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="667" y="-411"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="d9K-vG-0YJ">
             <objects>
@@ -35,6 +16,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fpb-p7-5v8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="917"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Fb-UK-u87">
+            <objects>
+                <viewController storyboardIdentifier="FMDBViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wxW-77-pCZ" customClass="FMDBViewController" customModule="PlainSwiftFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xbm-AW-PtC"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZo-wa-eKK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ekn-LF-yKI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLQ-VN-ywG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="1587"/>
         </scene>
         <!--Movies Container View Controller-->
         <scene sceneID="hOj-zd-iZ5">

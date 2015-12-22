@@ -52,6 +52,18 @@
 		0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A6F1C1AC54900ABED38 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A701C1AC54900ABED38 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB581C2925D6007580F2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB4E1C2925D6007580F2 /* FMDatabase.m */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB591C2925D6007580F2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB501C2925D6007580F2 /* FMDatabaseAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB5A1C2925D6007580F2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB521C2925D6007580F2 /* FMDatabasePool.m */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB5B1C2925D6007580F2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB541C2925D6007580F2 /* FMDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB5C1C2925D6007580F2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB571C2925D6007580F2 /* FMResultSet.m */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB601C2926E3007580F2 /* FMDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB5F1C2926E3007580F2 /* FMDBViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB631C29277D007580F2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3AB611C29277D007580F2 /* libsqlite3.0.tbd */; };
+		0EF3AB641C29277D007580F2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3AB621C29277D007580F2 /* libsqlite3.tbd */; };
+		0EF3AB661C292C32007580F2 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB651C292C32007580F2 /* StudentModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB6A1C292D24007580F2 /* StudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB691C292D24007580F2 /* StudentInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB6D1C292D53007580F2 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB6B1C292D53007580F2 /* HomeScreenViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0EF3AB6E1C292D53007580F2 /* InsertRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3AB6C1C292D53007580F2 /* InsertRecordViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFEF5D1C19B2B1004EA2AE /* AppDelegate.swift */; };
 		0EFFEF631C19B2B1004EA2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFEF611C19B2B1004EA2AE /* Main.storyboard */; };
 		0EFFEF661C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFEF641C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld */; };
@@ -128,6 +140,24 @@
 		0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		0EF3AB4D1C2925D6007580F2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0EF3AB4E1C2925D6007580F2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		0EF3AB4F1C2925D6007580F2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		0EF3AB501C2925D6007580F2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0EF3AB511C2925D6007580F2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		0EF3AB521C2925D6007580F2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		0EF3AB531C2925D6007580F2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		0EF3AB541C2925D6007580F2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		0EF3AB551C2925D6007580F2 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		0EF3AB561C2925D6007580F2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		0EF3AB571C2925D6007580F2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		0EF3AB5F1C2926E3007580F2 /* FMDBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDBViewController.swift; sourceTree = "<group>"; };
+		0EF3AB611C29277D007580F2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0EF3AB621C29277D007580F2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0EF3AB651C292C32007580F2 /* StudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		0EF3AB691C292D24007580F2 /* StudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInfo.swift; sourceTree = "<group>"; };
+		0EF3AB6B1C292D53007580F2 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		0EF3AB6C1C292D53007580F2 /* InsertRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertRecordViewController.swift; sourceTree = "<group>"; };
 		0EFFEF5A1C19B2B0004EA2AE /* PlainSwiftFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlainSwiftFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFFEF5D1C19B2B1004EA2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFFEF621C19B2B1004EA2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,6 +193,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF3AB631C29277D007580F2 /* libsqlite3.0.tbd in Frameworks */,
+				0EF3AB641C29277D007580F2 /* libsqlite3.tbd in Frameworks */,
 				5D8615527A7FF9069ACEA42A /* Pods_PlainSwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +223,24 @@
 				0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */,
 			);
 			name = Slider;
+			sourceTree = "<group>";
+		};
+		0EF3AB4C1C2925CB007580F2 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3AB4D1C2925D6007580F2 /* FMDatabase.h */,
+				0EF3AB4E1C2925D6007580F2 /* FMDatabase.m */,
+				0EF3AB4F1C2925D6007580F2 /* FMDatabaseAdditions.h */,
+				0EF3AB501C2925D6007580F2 /* FMDatabaseAdditions.m */,
+				0EF3AB511C2925D6007580F2 /* FMDatabasePool.h */,
+				0EF3AB521C2925D6007580F2 /* FMDatabasePool.m */,
+				0EF3AB531C2925D6007580F2 /* FMDatabaseQueue.h */,
+				0EF3AB541C2925D6007580F2 /* FMDatabaseQueue.m */,
+				0EF3AB551C2925D6007580F2 /* FMDB.h */,
+				0EF3AB561C2925D6007580F2 /* FMResultSet.h */,
+				0EF3AB571C2925D6007580F2 /* FMResultSet.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 		0EFFEF511C19B2B0004EA2AE = {
@@ -271,6 +321,7 @@
 				0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */,
 				0EFFEF991C19B326004EA2AE /* Movies.swift */,
 				0EFFEF9A1C19B326004EA2AE /* ReviewOrComment.swift */,
+				0EF3AB651C292C32007580F2 /* StudentModel.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -278,6 +329,7 @@
 		0EFFEF901C19B30B004EA2AE /* Properties */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3AB691C292D24007580F2 /* StudentInfo.swift */,
 				0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */,
 				0E1E35B11C22943700310CB8 /* CommentsModel+CoreDataProperties.swift */,
 				0E7F7A6D1C1AC54900ABED38 /* MenuItem.swift */,
@@ -291,6 +343,8 @@
 		0EFFEFA11C19B32E004EA2AE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3AB6B1C292D53007580F2 /* HomeScreenViewController.swift */,
+				0EF3AB6C1C292D53007580F2 /* InsertRecordViewController.swift */,
 				0E7F7A541C1AAF7700ABED38 /* Slider */,
 				0EFFEFA21C19B335004EA2AE /* FirstViewController.swift */,
 				0EFFEFA31C19B335004EA2AE /* BaseViewController.swift */,
@@ -299,6 +353,7 @@
 				0E1E35BF1C22B70A00310CB8 /* MoviesContainerViewController.swift */,
 				0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */,
 				0E1E35C31C22B8B600310CB8 /* MoviesGridViewController.swift */,
+				0EF3AB5F1C2926E3007580F2 /* FMDBViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -321,6 +376,7 @@
 		0EFFEFB01C19B38A004EA2AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3AB4C1C2925CB007580F2 /* FMDB */,
 				0EFFEFC61C19B537004EA2AE /* Objective-Bridging-Header.h */,
 				0EFFEF6C1C19B2B1004EA2AE /* Info.plist */,
 				0E3629831C216562007AACFF /* Books.xml */,
@@ -341,6 +397,8 @@
 		BC78FA612EFBF26CA569B20F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3AB611C29277D007580F2 /* libsqlite3.0.tbd */,
+				0EF3AB621C29277D007580F2 /* libsqlite3.tbd */,
 				CD360AC91624AD44680DEA74 /* Pods_PlainSwiftFramework.framework */,
 			);
 			name = Frameworks;
@@ -537,20 +595,29 @@
 				0EFFEF931C19B318004EA2AE /* ReviewOrComment+CoreDataProperties.swift in Sources */,
 				0EFFEFAC1C19B34F004EA2AE /* NetworkManager.swift in Sources */,
 				0EFFEF9B1C19B326004EA2AE /* Movies.swift in Sources */,
+				0EF3AB5A1C2925D6007580F2 /* FMDatabasePool.m in Sources */,
+				0EF3AB5B1C2925D6007580F2 /* FMDatabaseQueue.m in Sources */,
 				0EFFEFA41C19B335004EA2AE /* FirstViewController.swift in Sources */,
 				0E7F7A621C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
 				0E1E35A81C22935E00310CB8 /* MoviesTableViewController.swift in Sources */,
 				0E1E35C41C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */,
 				0E1E35B91C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */,
+				0EF3AB601C2926E3007580F2 /* FMDBViewController.swift in Sources */,
+				0EF3AB5C1C2925D6007580F2 /* FMResultSet.m in Sources */,
+				0EF3AB6A1C292D24007580F2 /* StudentInfo.swift in Sources */,
 				0EFFEF661C19B2B1004EA2AE /* PlainSwiftFramework.xcdatamodeld in Sources */,
 				0E1E35B61C22943700310CB8 /* MoviesModel.swift in Sources */,
 				0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */,
+				0EF3AB581C2925D6007580F2 /* FMDatabase.m in Sources */,
 				0E1E35C01C22B70A00310CB8 /* MoviesContainerViewController.swift in Sources */,
 				0E7F7A6A1C1ABA7400ABED38 /* ContainerViewController.swift in Sources */,
 				0EFFEFA71C19B335004EA2AE /* BaseViewController.swift in Sources */,
+				0EF3AB661C292C32007580F2 /* StudentModel.swift in Sources */,
 				0E1E35BC1C22943700310CB8 /* CommentsModel.swift in Sources */,
 				0E3629801C215CE6007AACFF /* XMLTableViewController.swift in Sources */,
+				0EF3AB6E1C292D53007580F2 /* InsertRecordViewController.swift in Sources */,
 				0EFFEFB51C19B483004EA2AE /* GlobalSingleton.swift in Sources */,
+				0EF3AB591C2925D6007580F2 /* FMDatabaseAdditions.m in Sources */,
 				0E1E35B31C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */,
 				0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */,
 				0EFFEF961C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
@@ -559,6 +626,7 @@
 				0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */,
 				0EFFEF9E1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFC31C19B4A3004EA2AE /* Constants.swift in Sources */,
+				0EF3AB6D1C292D53007580F2 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
