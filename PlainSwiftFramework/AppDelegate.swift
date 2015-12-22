@@ -6,7 +6,7 @@
 //  Created by maheshbabu.somineni on 12/10/15.
 //  Copyright © 2015 maheshbabu.somineni. All rights reserved.
 //
-
+//http://www.theappguruz.com/blog/use-sqlite-database-swift
 import UIKit
 import CoreData
 
