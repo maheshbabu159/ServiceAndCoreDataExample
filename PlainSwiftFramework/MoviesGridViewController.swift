@@ -27,6 +27,8 @@ class MoviesGridViewController: BaseViewController {
     }
     func refreshView(){
         
+        self.array = MoviesModel.fetchAllObjects(super.appDelegate.managedObjectContext)
+        self.moviesCollectionView.reloadData()
     }
 
     /*
@@ -57,14 +59,14 @@ extension MoviesGridViewController:UICollectionViewDataSource,UICollectionViewDe
         //Set the values
         let object:MoviesModel = self.array.objectAtIndex(indexPath.row) as! MoviesModel
         
-        let imageView:UIImageView = cell.contentView.viewWithTag(ControlTagsEnum.CELL_MOVIE_IMAGE_VIEW.rawValue) as! UIImageView
-        let nameLable:UILabel = cell.contentView.viewWithTag(ControlTagsEnum.CELL_MOVIE_NAME_LABLE.rawValue) as! UILabel
+        let imageView:UIImageView = cell.viewWithTag(ControlTagsEnum.CELL_MOVIE_IMAGE_VIEW.rawValue) as! UIImageView
+        let nameLable:UILabel = cell.viewWithTag(ControlTagsEnum.CELL_MOVIE_NAME_LABLE.rawValue) as! UILabel
         
         if let photo:NSDictionary = object.photo as? NSDictionary{
-            imageView.image = UIImage(named: photo.valueForKey("name") as! String)
+            
+            GlobalSettings.downloadImageFrom(photo.valueForKey("url") as! String, contentMode:  UIViewContentMode.ScaleAspectFit, imageView: imageView)
         }
         nameLable.text = object.name
-        
 
         return cell
     }

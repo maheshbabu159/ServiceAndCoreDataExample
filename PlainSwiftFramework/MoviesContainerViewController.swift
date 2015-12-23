@@ -23,7 +23,6 @@ class MoviesContainerViewController: BaseViewController {
     var moviesTableViewControllerDelegate:MoviesTableViewController!
     var moviesGridViewControllerDelegate:MoviesGridViewController!
     var selectedSegmentIndex:Int = 0
-    var seletedDataView:Int = 0
 
     //MARK:Life Cycle
     override func viewDidLoad() {
@@ -42,10 +41,13 @@ class MoviesContainerViewController: BaseViewController {
         if(GlobalSettings.isGridView()){
             self.gridContainerView.hidden = false
             self.tableContainerView.hidden = true
-            
+            self.moviesGridViewControllerDelegate.refreshView()
+
         }else{
             self.gridContainerView.hidden = true
             self.tableContainerView.hidden = false
+            self.moviesTableViewControllerDelegate.refreshView()
+
         }
     }
     override func didReceiveMemoryWarning() {
@@ -79,11 +81,17 @@ class MoviesContainerViewController: BaseViewController {
     // MARK: - Button click methods
     @IBAction func gridButtonClick(sender:AnyObject){
         
-        
+        if(GlobalSettings.isGridView()){
+            GlobalSettings.setGridView(false)
+        }else{
+            GlobalSettings.setGridView(true)
+        }
+        self.setDefaultView()
     }
     @IBAction func segmentValueChanged(sender:AnyObject){
         let segmentControll:UISegmentedControl = sender as! UISegmentedControl
         self.selectedSegmentIndex  = segmentControll.selectedSegmentIndex
+        self.refreshView()
     }
     @IBAction func searchButtonClick(sender:AnyObject){
         self.getMoviesByIndustryServiceCall("All")

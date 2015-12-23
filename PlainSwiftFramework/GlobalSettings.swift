@@ -85,7 +85,7 @@ class GlobalSettings {
         
         return value
     }
-    class func setGridView()(value: Bool){
+    class func setGridView(value: Bool){
         GlobalVariables.globalUserDefaults.setBool(value, forKey: GlobalVariables.user_grid_view_key)
         NSUserDefaults.standardUserDefaults().synchronize()
     }

@@ -121,13 +121,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlainSwiftFramework/GlobalSettings.swift"
-            timestampString = "472562289.776035"
+            filePath = "PlainSwiftFramework/MoviesContainerViewController.swift"
+            timestampString = "472569006.75914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "436"
-            endingLineNumber = "436"
-            landmarkName = "downloadImageFrom(_:contentMode:imageView:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "segmentValueChanged(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -137,46 +137,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlainSwiftFramework/GlobalSettings.swift"
-            timestampString = "472562321.593134"
+            filePath = "PlainSwiftFramework/MoviesContainerViewController.swift"
+            timestampString = "472568593.7377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "431"
-            endingLineNumber = "431"
-            landmarkName = "downloadImageFrom(_:contentMode:imageView:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "setDefaultView()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PlainSwiftFramework.GlobalSettings.downloadImageFrom (PlainSwiftFramework.GlobalSettings.Type)(Swift.String, contentMode : C.UIViewContentMode, imageView : ObjectiveC.UIImageView) -&gt; ()"
-                  moduleName = "PlainSwiftFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maheshbabusomineni/Desktop/PlainSwiftFramework/PlainSwiftFramework/GlobalSettings.swift"
-                  timestampString = "472567306.892104"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "431"
-                  endingLineNumber = "431"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PlainSwiftFramework.GlobalSettings.(downloadImageFrom (PlainSwiftFramework.GlobalSettings.Type) -&gt; (Swift.String, contentMode : C.UIViewContentMode, imageView : ObjectiveC.UIImageView) -&gt; ()).(closure #1)"
-                  moduleName = "PlainSwiftFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maheshbabusomineni/Desktop/PlainSwiftFramework/PlainSwiftFramework/GlobalSettings.swift"
-                  timestampString = "472567306.892237"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "433"
-                  endingLineNumber = "433"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -185,13 +153,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlainSwiftFramework/MoviesTableViewController.swift"
-            timestampString = "472567238.034855"
+            filePath = "PlainSwiftFramework/MoviesGridViewController.swift"
+            timestampString = "472568638.138275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlainSwiftFramework/MoviesGridViewController.swift"
+            timestampString = "472568641.450339"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "refreshView()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlainSwiftFramework/MoviesContainerViewController.swift"
+            timestampString = "472569006.75914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "refreshView()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

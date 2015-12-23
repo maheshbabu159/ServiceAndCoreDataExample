@@ -61,10 +61,17 @@
                                                 <segment title="In Theaters"/>
                                                 <segment title="Up Coming"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="segmentValueChanged:" destination="Y2u-E7-EWv" eventType="touchUpInside" id="eM6-gK-ApL"/>
+                                            </connections>
                                         </segmentedControl>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yGR-h6-BMG"/>
-                                    <barButtonItem title="Grid" id="bDs-tP-0Nq"/>
+                                    <barButtonItem title="Grid" id="bDs-tP-0Nq">
+                                        <connections>
+                                            <action selector="gridButtonClick:" destination="Y2u-E7-EWv" id="Ysy-8A-FVe"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="SuT-7p-Nht"/>
                                 </items>
                             </toolbar>
@@ -214,7 +221,7 @@
                                                 <imageView userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-Sj-wWe">
                                                     <rect key="frame" x="8" y="0.0" width="71" height="87"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-BB-2U9">
+                                                <label opaque="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-BB-2U9">
                                                     <rect key="frame" x="87" y="33" width="244" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -295,7 +302,7 @@
                                                 <imageView userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="Vw7-Ib-iqd">
                                                     <rect key="frame" x="0.0" y="0.0" width="125" height="84"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lje-Bi-xRv">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lje-Bi-xRv">
                                                     <rect key="frame" x="8" y="89" width="109" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -306,6 +313,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fcd-Ur-Z23" id="23k-hv-iAK"/>
+                                    <outlet property="delegate" destination="Fcd-Ur-Z23" id="y43-ta-t53"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
