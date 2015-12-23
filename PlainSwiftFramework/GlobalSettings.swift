@@ -45,6 +45,7 @@ class GlobalSettings {
         GlobalVariables.globalUserDefaults.setValue("", forKey: GlobalVariables.user_defaults_name_key)
         
         GlobalVariables.globalUserDefaults.setBool(GlobalVariables.isPurchased, forKey: GlobalVariables.user_defaults_isPurchased_key)
+        GlobalVariables.globalUserDefaults.setBool(GlobalVariables.isPurchased, forKey: GlobalVariables.user_grid_view_key)
 
 
         
@@ -76,6 +77,17 @@ class GlobalSettings {
         
         NSUserDefaults.standardUserDefaults().synchronize()
 
+    }
+    
+    class func isGridView() -> Bool{
+        
+        let value = GlobalVariables.globalUserDefaults.boolForKey(GlobalVariables.user_grid_view_key)
+        
+        return value
+    }
+    class func setGridView()(value: Bool){
+        GlobalVariables.globalUserDefaults.setBool(value, forKey: GlobalVariables.user_grid_view_key)
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 
     class func udateSessionId(value:NSString){
@@ -415,4 +427,16 @@ class GlobalSettings {
             return false
         }
     }
+    class func downloadImageFrom(link:String, contentMode: UIViewContentMode, imageView:UIImageView) {
+        NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:link)!, completionHandler: {
+            (data, response, error) -> Void in
+            dispatch_async(dispatch_get_main_queue()) {
+                imageView.contentMode =  contentMode
+                if let data = data {
+                    imageView.image = UIImage(data: data)
+                }
+            }
+        }).resume()
+    }
+
 }

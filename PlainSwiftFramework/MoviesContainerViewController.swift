@@ -16,7 +16,6 @@ enum DataViewEnum:Int{
     case List = 0
     case Grid = 1
 }
-
 class MoviesContainerViewController: BaseViewController {
 
     @IBOutlet var tableContainerView:UIView!
@@ -35,6 +34,19 @@ class MoviesContainerViewController: BaseViewController {
         super.viewWillAppear(animated)
         
         self.getMoviesByIndustryServiceCall("Tollywood")
+        
+        self.setDefaultView()
+    }
+    func setDefaultView(){
+        
+        if(GlobalSettings.isGridView()){
+            self.gridContainerView.hidden = false
+            self.tableContainerView.hidden = true
+            
+        }else{
+            self.gridContainerView.hidden = true
+            self.tableContainerView.hidden = false
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -92,7 +104,7 @@ class MoviesContainerViewController: BaseViewController {
             if let rootDictionary = reponseData as? [String:AnyObject]{
                 if let resultArray:[AnyObject] = rootDictionary["result"] as? [AnyObject]{
                     //Remove all objects
-                    MoviesModel.truncateAllObjects(super.appDelegate.managedObjectContext)
+                    //MoviesModel.truncateAllObjects(super.appDelegate.managedObjectContext)
                     //Insert all records
                     for dictionary in resultArray{
                         MoviesModel.insertObject(dictionary, context:self.appDelegate.managedObjectContext)

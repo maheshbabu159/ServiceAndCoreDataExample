@@ -9,6 +9,7 @@ pod 'MBProgressHUD'
 #pod 'ParseUI'
 pod 'Google-Mobile-Ads-SDK'
 pod 'UIColor_Hex_Swift', '~> 1.5'
+
 end
 
 

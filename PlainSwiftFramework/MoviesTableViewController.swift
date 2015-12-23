@@ -11,12 +11,17 @@ import UIKit
 protocol ContainerViewControllerProtocol {
     func someDelegateMethod()
 }
+enum ControlTagsEnum:Int{
+    
+    case CELL_MOVIE_IMAGE_VIEW = 1000
+    case CELL_MOVIE_NAME_LABLE = 1001
+
+}
 class MoviesTableViewController: BaseViewController {
     @IBOutlet var moviesTableView:UITableView!
     var parentDelegate: MoviesContainerViewController!
     var array:NSArray!
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +35,8 @@ class MoviesTableViewController: BaseViewController {
     }
     func refreshView(){
         
+        self.array = MoviesModel.fetchAllObjects(super.appDelegate.managedObjectContext)
+        self.moviesTableView.reloadData()
     }
     /*
     // MARK: - Navigation
@@ -48,19 +55,30 @@ extension MoviesTableViewController:UITableViewDelegate,UITableViewDataSource{
         return 1
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return self.array.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell")!
-        
         if(cell.isEqual(NSNull)) {
             cell = NSBundle.mainBundle().loadNibNamed("Cell", owner: self, options: nil)[0] as! UITableViewCell;
         }
         
-        return cell as UITableViewCell
+        //Set the values
+        let object:MoviesModel = self.array.objectAtIndex(indexPath.row) as! MoviesModel
+        
+        let imageView:UIImageView = cell.contentView.viewWithTag(ControlTagsEnum.CELL_MOVIE_IMAGE_VIEW.rawValue) as! UIImageView
+        let nameLable:UILabel = cell.contentView.viewWithTag(ControlTagsEnum.CELL_MOVIE_NAME_LABLE.rawValue) as! UILabel
+        
+        if let photo:NSDictionary = object.photo as? NSDictionary{
 
+            GlobalSettings.downloadImageFrom(photo.valueForKey("url") as! String, contentMode:  UIViewContentMode.ScaleAspectFit, imageView: imageView)
+        }
+        nameLable.text = object.name
+        
+        return cell as UITableViewCell
     }
-    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 88
+    }
 }

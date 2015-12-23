@@ -15,7 +15,6 @@ protocol CMNetworkDelegate{
 }
 
 class NetworkManager: NSObject {
-
     
     class func postRequest(parameters:[String:AnyObject], delegate:CMNetworkDelegate) {
                 

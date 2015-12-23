@@ -30,6 +30,9 @@ class MoviesModel: NSManagedObject {
         if let cast = dictionary.valueForKey("cast"){
             newEntity.cast = cast as? String
         }
+        if let name = dictionary.valueForKey("name"){
+            newEntity.name = name as? String
+        }
         if let descrption:String = dictionary.valueForKey("descrption") as? String{
             newEntity.descrption = descrption
         }

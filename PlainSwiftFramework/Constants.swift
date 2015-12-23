@@ -56,7 +56,8 @@ struct GlobalVariables {
     static let user_defaults_role_id_key = "roleId"
     static let user_defaults_name_key = "name"
     static let user_defaults_isPurchased_key = "isPurchased"
-     
+    static let user_grid_view_key = "default_view"
+
     //Service calls values
     static let request_url = "https://api.parse.com/1/functions/function"
     static let moreAppsURL = "https://itunes.apple.com/us/artist/mahendra-babu/id470889593"

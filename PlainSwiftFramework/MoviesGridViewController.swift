@@ -53,6 +53,19 @@ extension MoviesGridViewController:UICollectionViewDataSource,UICollectionViewDe
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
+        
+        //Set the values
+        let object:MoviesModel = self.array.objectAtIndex(indexPath.row) as! MoviesModel
+        
+        let imageView:UIImageView = cell.contentView.viewWithTag(ControlTagsEnum.CELL_MOVIE_IMAGE_VIEW.rawValue) as! UIImageView
+        let nameLable:UILabel = cell.contentView.viewWithTag(ControlTagsEnum.CELL_MOVIE_NAME_LABLE.rawValue) as! UILabel
+        
+        if let photo:NSDictionary = object.photo as? NSDictionary{
+            imageView.image = UIImage(named: photo.valueForKey("name") as! String)
+        }
+        nameLable.text = object.name
+        
+
         return cell
     }
     
