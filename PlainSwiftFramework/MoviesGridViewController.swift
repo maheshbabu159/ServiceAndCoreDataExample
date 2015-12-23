@@ -12,15 +12,26 @@ class MoviesGridViewController: BaseViewController {
     @IBOutlet var moviesCollectionView:UICollectionView!
     var parentDelegate: MoviesContainerViewController!
     var array:NSArray!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.moviesCollectionView.backgroundColor = UIColor.whiteColor()
         self.array = NSArray()
+        
+        self.setCollectionViewLayout()
     }
 
+    func setCollectionViewLayout(){
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 90, height: 90)
+        layout.minimumLineSpacing = 1.0
+        layout.minimumInteritemSpacing = 1.0
+        self.moviesCollectionView.setCollectionViewLayout(layout, animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

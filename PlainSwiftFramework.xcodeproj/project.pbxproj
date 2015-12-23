@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E0388A61C2A9FF500817212 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0388A51C2A9FF500817212 /* UIImageView+DownloadImage.swift */; settings = {ASSET_TAGS = (); }; };
 		0E1E35A81C22935E00310CB8 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0E1E35A91C22935E00310CB8 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0E1E35AA1C22935E00310CB8 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -126,7 +125,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E0388A51C2A9FF500817212 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		0E1E35A71C22935E00310CB8 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
 		0E1E35AB1C2293E000310CB8 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		0E1E35AF1C22943700310CB8 /* MoviesModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -379,7 +377,6 @@
 		0EFFEFAF1C19B356004EA2AE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0E0388A51C2A9FF500817212 /* UIImageView+DownloadImage.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -635,7 +632,6 @@
 				0EFFEFBF1C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
 				0E3629881C216640007AACFF /* Book.swift in Sources */,
 				0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */,
-				0E0388A61C2A9FF500817212 /* UIImageView+DownloadImage.swift in Sources */,
 				0EFFEF9E1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFC31C19B4A3004EA2AE /* Constants.swift in Sources */,
 				0EF3AB6D1C292D53007580F2 /* HomeScreenViewController.swift in Sources */,
