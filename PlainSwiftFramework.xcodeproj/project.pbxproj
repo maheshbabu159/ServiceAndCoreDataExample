@@ -40,6 +40,9 @@
 		0E3629881C216640007AACFF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3629871C216640007AACFF /* Book.swift */; settings = {ASSET_TAGS = (); }; };
 		0E3629891C216640007AACFF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3629871C216640007AACFF /* Book.swift */; settings = {ASSET_TAGS = (); }; };
 		0E36298A1C216640007AACFF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3629871C216640007AACFF /* Book.swift */; settings = {ASSET_TAGS = (); }; };
+		0E37C4CF1C3BA62600F5E25C /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37C4CE1C3BA62600F5E25C /* UIImage+Decompression.swift */; settings = {ASSET_TAGS = (); }; };
+		0E37C4D11C3BA63200F5E25C /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37C4D01C3BA63200F5E25C /* PinterestLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		0E76E02E1C3BBA3400227480 /* AnnotatedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76E02C1C3BBA3400227480 /* AnnotatedPhotoCell.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4B1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4C1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
 		0E7F7A4D1C1AAAA400ABED38 /* CommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */; settings = {ASSET_TAGS = (); }; };
@@ -136,6 +139,9 @@
 		0E36297F1C215CE6007AACFF /* XMLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLTableViewController.swift; sourceTree = "<group>"; };
 		0E3629831C216562007AACFF /* Books.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Books.xml; sourceTree = "<group>"; };
 		0E3629871C216640007AACFF /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		0E37C4CE1C3BA62600F5E25C /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
+		0E37C4D01C3BA63200F5E25C /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		0E76E02C1C3BBA3400227480 /* AnnotatedPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedPhotoCell.swift; sourceTree = "<group>"; };
 		0E7F7A4A1C1AAAA400ABED38 /* CommonOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonOperations.swift; sourceTree = "<group>"; };
 		0E7F7A611C1AB0B500ABED38 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		0E7F7A691C1ABA7400ABED38 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -377,6 +383,9 @@
 		0EFFEFAF1C19B356004EA2AE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0E76E02C1C3BBA3400227480 /* AnnotatedPhotoCell.swift */,
+				0E37C4D01C3BA63200F5E25C /* PinterestLayout.swift */,
+				0E37C4CE1C3BA62600F5E25C /* UIImage+Decompression.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -609,6 +618,7 @@
 				0E7F7A621C1AB0B500ABED38 /* SideMenuViewController.swift in Sources */,
 				0E1E35A81C22935E00310CB8 /* MoviesTableViewController.swift in Sources */,
 				0E1E35C41C22B8B600310CB8 /* MoviesGridViewController.swift in Sources */,
+				0E76E02E1C3BBA3400227480 /* AnnotatedPhotoCell.swift in Sources */,
 				0E1E35B91C22943700310CB8 /* CommentsModel+CoreDataProperties.swift in Sources */,
 				0EF3AB601C2926E3007580F2 /* FMDBViewController.swift in Sources */,
 				0EF3AB5C1C2925D6007580F2 /* FMResultSet.m in Sources */,
@@ -628,12 +638,14 @@
 				0EF3AB591C2925D6007580F2 /* FMDatabaseAdditions.m in Sources */,
 				0E1E35B31C22943700310CB8 /* MoviesModel+CoreDataProperties.swift in Sources */,
 				0EFFEF5E1C19B2B1004EA2AE /* AppDelegate.swift in Sources */,
+				0E37C4CF1C3BA62600F5E25C /* UIImage+Decompression.swift in Sources */,
 				0EFFEF961C19B318004EA2AE /* Movies+CoreDataProperties.swift in Sources */,
 				0EFFEFBF1C19B49A004EA2AE /* GlobalSettings.swift in Sources */,
 				0E3629881C216640007AACFF /* Book.swift in Sources */,
 				0E7F7A6E1C1AC54900ABED38 /* MenuItem.swift in Sources */,
 				0EFFEF9E1C19B326004EA2AE /* ReviewOrComment.swift in Sources */,
 				0EFFEFC31C19B4A3004EA2AE /* Constants.swift in Sources */,
+				0E37C4D11C3BA63200F5E25C /* PinterestLayout.swift in Sources */,
 				0EF3AB6D1C292D53007580F2 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

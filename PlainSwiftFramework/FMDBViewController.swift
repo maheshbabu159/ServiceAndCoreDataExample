@@ -24,7 +24,6 @@ class FMDBViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -34,5 +33,5 @@ class FMDBViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

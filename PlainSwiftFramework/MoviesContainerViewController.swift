@@ -60,12 +60,12 @@ class MoviesContainerViewController: BaseViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if(segue.identifier == "tableEmbedSegue"){
-            moviesTableViewControllerDelegate = segue.destinationViewController as! MoviesTableViewController
-            moviesTableViewControllerDelegate.parentDelegate = self
+            self.moviesTableViewControllerDelegate = segue.destinationViewController as! MoviesTableViewController
+            self.moviesTableViewControllerDelegate.parentDelegate = self
         }
         if(segue.identifier == "gridEmbedSegue"){
-            moviesGridViewControllerDelegate = segue.destinationViewController as! MoviesGridViewController
-            moviesGridViewControllerDelegate.parentDelegate = self
+            self.moviesGridViewControllerDelegate = segue.destinationViewController as! MoviesGridViewController
+            self.moviesGridViewControllerDelegate.parentDelegate = self
         }
     }
     func refreshView(){
